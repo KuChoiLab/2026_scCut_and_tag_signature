@@ -1,0 +1,28 @@
+item	mode	path	md5	source
+ChIP reads (tagAlign)	gz	bam/chip_rep1.tagAlign.gz	9b117154b2ca8ee7d0be948f433c0195	yale
+control reads (tagAlign)	gz	bam/ctl_rep1.tagAlign.gz	7637b5c58f7b21e2bb5865921f89732d	yale
+ChIP BAM reads	bam	bam/chip_rep1.nodup.bam	64df1cb69dbe330bc2558a18c817ca0f	yale
+control BAM reads	bam	bam/ctl_rep1.nodup.bam	791f0b6da9e348fc0f003edb5245c6ac	yale
+ChIP bowtie2 log	raw	qc/chip_rep1.bowtie2.log	3c4af6aaacec2e1c51e6629c9e7772de	yale
+control bowtie2 log	raw	qc/ctl_rep1.bowtie2.log	41bcabf892aef1f5a75e2d7a2c215f16	yale
+ChIP flagstat	raw	qc/chip_rep1.flagstat.qc	07d5d8931b21c27235560a9489911e53	yale
+ChIP nodup flagstat	raw	qc/chip_rep1.nodup.flagstat.qc	1bd328e39f634c2ce3cbd22b3da950cd	yale
+ChIP duplicates (Picard)	nohash	qc/chip_rep1.dup.qc	23b6030a9a836d14870e4454f057ba40	yale
+ChIP library complexity	raw	qc/chip_rep1.lib_complexity.qc	d3fad2031e283ceeae634ae95a5f1d6e	yale
+control flagstat	raw	qc/ctl_rep1.flagstat.qc	9252b5582834e745f6ee0296dfbb9ae8	yale
+control nodup flagstat	raw	qc/ctl_rep1.nodup.flagstat.qc	d92d8cab92243020814ba466481cc447	yale
+control duplicates (Picard)	nohash	qc/ctl_rep1.dup.qc	0ed3489fa2bee92a2bf59bf6d160be1f	yale
+control library complexity	raw	qc/ctl_rep1.lib_complexity.qc	4d8ee070590f9ecbcb1bbcc4d45164bf	yale
+cross-correlation (fraglen, NSC, RSC)	raw	xcor/rep1.cc.qc	-	info
+control choice	raw	qc/chosen_ctl.tsv	02638b322ff80c9c97c4768b4980636f	yale
+peaks rep1	gz	peaks/rep1.bfilt.narrowPeak.gz	90a32a2ee322f8f03ff2f922c10b7572	yale
+peaks pseudo-rep 1	gz	peaks/rep1-pr1.bfilt.narrowPeak.gz	5242086da6a9084f548681bc068badbd	yale
+peaks pseudo-rep 2	gz	peaks/rep1-pr2.bfilt.narrowPeak.gz	9d5f0d3b2e94d569fbe40d483b99b93d	yale
+peaks pseudo-rep overlap	gz	peaks/rep1-pr1_vs_rep1-pr2.overlap.bfilt.narrowPeak.gz	2b2c5d8a773239b6f3b5ba0a49502608	yale
+peaks optimal	gz	peaks/optimal_peak.narrowPeak.gz	2b2c5d8a773239b6f3b5ba0a49502608	yale
+peaks conservative	gz	peaks/conservative_peak.narrowPeak.gz	2b2c5d8a773239b6f3b5ba0a49502608	yale
+reproducibility	raw	qc/reproducibility.qc	886b876826489bd342a0028056fd1d52	yale
+alignment QC table	raw	qc/align_qc.tsv	60148ef1da745e5d3d3ae27eaf492504	yale
+peak QC table (FRiP, sizes)	raw	qc/peak_qc.tsv	0f7be33f288d463ea08bae52aa0cb011	yale
+signal fold enrichment	raw	signal/rep1.fc.signal.bigwig	97a42b1cfb6a496208daade224f440ea	yale
+signal -log10 p	raw	signal/rep1.pval.signal.bigwig	0b3f2867497edd26526c42c9504efaa8	encode

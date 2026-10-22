@@ -1,0 +1,31 @@
+# Conda equivalent of chip-seq-pipeline_v2.2.2.sif (versions read from the container, 2026-10-01)
+name: chipseq_v2.2.2
+# Build:  mamba env create -f chipseq_v2.2.2.yml -p <ENV_PREFIX>
+# Then add the two ENCODE scripts that are not on conda (download commands: README_env.md), or copy them from the container:
+#   singularity exec --cleanenv $SIF cp /software/phantompeakqualtools-1.2.1/run_spp.R /software/chip-seq-pipeline/src/trimfastq.py $ENV/bin/
+# Not identical to the container: R 3.4.1 (sif 3.4.4), python 3.6.7 (3.6.9), openjdk 8u472 (8u362); openssl 1.0.2u (sif 1.0.2t) gives the same shuf random stream
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.6            # container: 3.6.9 (macs2 runs on python3)
+  - numpy=1.19.5
+  - macs2=2.2.4
+  - bowtie2=2.3.4.3
+  - samtools=1.9
+  - htslib=1.9
+  - openssl=1.0.2        # default -md is md5 here, as in the sif (pseudoreps/subsampling seed)
+  - bedtools=2.29.0
+  - picard=2.20.7
+  - openjdk=8
+  - ucsc-bedclip=377
+  - ucsc-bedgraphtobigwig=377
+  - ucsc-bedtobigbed=377
+  - r-base=3.4
+  - libgfortran=3.0.0     # r-base 3.4.1 links libgfortran.so.3
+  - r-spp=1.14
+  - r-catools
+  - r-snow
+  - r-snowfall
+  - r-bitops
+  - bioconductor-rsamtools
